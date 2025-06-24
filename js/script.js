@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 // Toggle class active untuk hamburger menu
 const navbarNav = document.querySelector(".navbar-nav");
 // ketika hamburger menu diklik
+=======
+// Toggle Class ActiveAdd commentMore actions
+const navbarNav = document.querySelector(".navbar-nav");
+
+// ketika Hamburger Menu Di Klik
+>>>>>>> 4f4bf1c099a9165c251556f66cb77dbf5cbce24a
 document.querySelector("#hamburger-menu").onclick = () => {
   navbarNav.classList.toggle("active");
 };
 
+<<<<<<< HEAD
 // Toggle class active untuk search from
 const searchForm = document.querySelector(".search-form");
 const searchBox = document.querySelector("#search-box");
@@ -62,3 +70,13 @@ window.onclick = (e) => {
     itemDetailModal.style.display = "none";
   }
 };
+=======
+// klik diluar sidebar untuk menghilangkan sidebar
+const hamburger = document.querySelector("#hamburger-menu");
+
+document.addEventListener("click", function (e) {
+  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
+  }
+});
+>>>>>>> 4f4bf1c099a9165c251556f66cb77dbf5cbce24a
